@@ -38,8 +38,8 @@ pnpm install
 
 ## Publishing to NPM Registry
 The `.github\workflows\publish.yml` file makes use of two repository secrets to publish this package in the NPM registry: 
-1) `secrets.GITHUB_TOKEN` 
-2) `secrets.GITHUB_TOKEN`
+1) `secrets.GHP_TOKEN` 
+2) `secrets.NPM_TOKEN`
 
 ### Obtain NPM Token:
 
@@ -56,7 +56,8 @@ The `.github\workflows\publish.yml` file makes use of two repository secrets to 
 1. In the left sidebar, navigate to "Developer settings" > "Personal access tokens."
 1. Click on "Tokens (classic)".
 1. Click on "Generate new token" and then "Generate new token (classic)".
-1. Follow the prompts to create a new token with appropriate permissions (e.g., read and write access for repositories).
+1. Enter something on the "Note" input, specify expiry time on the "Expiration" input.
+1. Checkmark on `repo` and `write:packages`.
 1. Click on "Generate token".
 1. Copy the generated GitHub token.
 
@@ -71,7 +72,7 @@ The `.github\workflows\publish.yml` file makes use of two repository secrets to 
 1. Click "Add secret" to save the secret.
 1. Go back.
 1. Click on the "New repository secret" button.
-1. For GitHub, set the secret name as GITHUB_TOKEN and paste the GitHub token as the secret value.
+1. For GitHub, set the secret name as GHP_TOKEN and paste the GitHub token as the secret value.
 1. Click "Add secret" to save the secret.
 
 ## Project Structure
