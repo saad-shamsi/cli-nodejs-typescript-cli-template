@@ -2,6 +2,8 @@
 
 This repository is a Node.js TypeScript template for creating CLI applications. It comes preconfigured with TypeScript, allowing you to write your code in a type-safe manner.
 
+## Table of Contents
+
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Publishing to NPM Registry](#publishing-to-npm-registry)
@@ -20,8 +22,8 @@ This repository is a Node.js TypeScript template for creating CLI applications. 
 
 Make sure you have the following tools installed on your system:
 
-- [Node.js](https://nodejs.org/en) (v16.x recommended)
-- [pnpm](https://pnpm.io/) (Version 7 or later)
+- [Node.js](https://nodejs.org/en) (v18.x recommended)
+- [pnpm](https://pnpm.io/) (Version 8 or later)
 
 ## Getting Started
 
