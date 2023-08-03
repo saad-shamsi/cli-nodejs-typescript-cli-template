@@ -2,7 +2,7 @@
 "nodejs-typescript-cli-template": major
 ---
 
-- (4469f79:70b83b7)
+- (551b8b7:f8478d0)
 
 - Added 'dist' to .gitignore.
 - Corrected versioning and formatted the latest changelog.
