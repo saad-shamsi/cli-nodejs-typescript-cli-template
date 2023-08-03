@@ -2,20 +2,19 @@
 
 This repository is a Node.js TypeScript template for creating CLI applications. It comes preconfigured with TypeScript, allowing you to write your code in a type-safe manner.
 
-- [Node.js TypeScript CLI Template](#nodejs-typescript-cli-template)
-	- [Prerequisites](#prerequisites)
-	- [Getting Started](#getting-started)
-	- [Publishing to NPM Registry](#publishing-to-npm-registry)
-		- [Obtain NPM Token:](#obtain-npm-token)
-		- [Obtain GitHub Token:](#obtain-github-token)
-		- [Add Tokens as GitHub Repository Secrets:](#add-tokens-as-github-repository-secrets)
-	- [Project Structure](#project-structure)
-	- [Available Scripts](#available-scripts)
-	- [Contributing](#contributing)
-	- [License](#license)
-	- [Acknowledgments](#acknowledgments)
-	- [Author](#author)
-	- [Contact](#contact)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Publishing to NPM Registry](#publishing-to-npm-registry)
+  - [Obtain NPM Token:](#obtain-npm-token)
+  - [Obtain GitHub Token:](#obtain-github-token)
+  - [Add Tokens as GitHub Repository Secrets:](#add-tokens-as-github-repository-secrets)
+- [Project Structure](#project-structure)
+- [Available Scripts](#available-scripts)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Author](#author)
+- [Contact](#contact)
 
 ## Prerequisites
 
@@ -46,7 +45,7 @@ The `.github\workflows\publish.yml` file makes use of two repository secrets to 
 1. Go to the NPM website (https://www.npmjs.com/) and sign in with your NPM account.
 1. Click on your profile icon in the top right corner and select "Access Tokens" from the dropdown menu.
 1. Click on the "Generate New Token" button, then click on "Classic Token".
-1. Type the name for the Token select "Publish" radio button, then press "Generate Token".
+1. Type the name for the Token select the "Publish" radio button, then press "Generate Token".
 1. Copy the generated NPM token.
 
 ### Obtain GitHub Token:
@@ -56,14 +55,14 @@ The `.github\workflows\publish.yml` file makes use of two repository secrets to 
 1. In the left sidebar, navigate to "Developer settings" > "Personal access tokens."
 1. Click on "Tokens (classic)".
 1. Click on "Generate new token" and then "Generate new token (classic)".
-1. Enter something on the "Note" input, specify expiry time on the "Expiration" input.
+1. Enter something on the "Note" input, and specify the expiry time on the "Expiration" input.
 1. Checkmark on `repo` and `write:packages`.
 1. Click on "Generate token".
 1. Copy the generated GitHub token.
 
 ### Add Tokens as GitHub Repository Secrets:
 
-1. If you had cloned,forked or used this repository as template, follow next steps.
+1. If you had cloned, forked or used this repository as a template, follow the next steps.
 1. Click on the "Settings" tab in the repository menu.
 1. In the left sidebar, click on "Secrets and variables".
 1. Click on "Actions".
@@ -102,6 +101,7 @@ The `.github\workflows\publish.yml` file makes use of two repository secrets to 
 - `pnpm start`: Builds the project and starts the CLI application.
 - `pnpm build`: Compiles the TypeScript code to CommonJS (CJS) and ECMAScript modules (ESM) formats, and generates declaration files (d.ts).
 - `pnpm lint`: Checks for TypeScript type errors and enforces strict type checking.
+- `pnpm release`: Builts the project and then publishes changeset updates.
 
 ## Contributing
 We welcome contributions! If you find any issues or have improvements to suggest, feel free to open a pull request.
