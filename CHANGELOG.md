@@ -1,5 +1,11 @@
 # Node.js TypeScript CLI Template
 
+## 2.0.1
+
+### Patch Changes
+
+- [`b788e64`](https://github.com/saad-shamsi/cli-nodejs-typescript-cli-template/commit/b788e64938ddad77744898dc3ac68d42742d29b9) Thanks [@saadfrhan](https://github.com/saadfrhan)! - `.changeset/config.json`: Change the key value of the "access" key from "restricted" to "public"
+
 ## 2.0.0
 
 ### Major Changes
