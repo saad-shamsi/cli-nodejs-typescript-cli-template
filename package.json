@@ -16,7 +16,8 @@
   "scripts": {
     "start": "pnpm build && node dist/index.js",
     "build": "tsup src/index.ts --format esm --dts",
-    "lint": "tsc"
+    "lint": "tsc",
+		"release": "pnpm run build && changeset publish"
   },
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.8",
