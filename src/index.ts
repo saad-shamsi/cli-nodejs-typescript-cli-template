@@ -3,7 +3,7 @@
 import { input } from "@inquirer/prompts";
 import { toTitleCase } from "./utils/toTitleCase.js";
 
-const name = await input({
+const name = (async () => await input({
 	message: "What's your name?",
 	default: "User",
 	validate: (input: string) => {
@@ -15,7 +15,7 @@ const name = await input({
 	transformer: (input: string) => {
 		return toTitleCase(input);
 	},
-});
+}))();
 
 console.log(`Hello, ${name}!`)
 
