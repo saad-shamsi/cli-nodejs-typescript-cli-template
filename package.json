@@ -1,18 +1,23 @@
 {
-  "name": "cli-oop-bank-app",
-  "version": "1.0.1",
-  "description": "",
+  "name": "nodejs-typescript-cli-template",
+  "version": "0.0.1",
+  "description": "Node.js TypeScript CLI Template for building command-line applications.",
+  "keywords": [
+    "Node.js",
+    "TypeScript",
+    "CLI",
+    "Inquirer"
+  ],
+  "author": "Saad Shamsi",
   "main": "src/index.js",
   "type": "module",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "pnpm build && node dist/index.js",
-    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "build": "tsup src/index.ts --format esm --dts",
     "lint": "tsc"
   },
-  "keywords": [],
-  "author": "",
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
     "@types/node": "^20.4.6",

@@ -1,7 +1,7 @@
-# cli-oop-bank-app
+# Node.js TypeScript CLI Template
 
-## 1.0.1
+## 0.0.1
 
 ### Patch Changes
 
-- 2ec75aa: added a console.log that prints hello world
+- d197543: added a console.log that prints "Hello world!" to the terminal.
