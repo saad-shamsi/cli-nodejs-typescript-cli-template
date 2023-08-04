@@ -8,7 +8,8 @@
   - Remove CJS support.
   - Improve the username beautifying function.
   - Adjust `tsconfig.json`
-  - Seperate the questions into a seperate folder.
+  - Separate the questions into a folder.
+  - Add `"allowSyntheticDefaultImports": true` in the `tsconfig.json`.
 
 ## 1.0.1
 
