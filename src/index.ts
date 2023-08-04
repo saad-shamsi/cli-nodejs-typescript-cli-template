@@ -2,17 +2,9 @@
 
 import { input } from "@inquirer/prompts";
 import { beautifyName } from "./utils/beautifyName.js";
+import { inputQuestions } from "./questions/input.js";
 
-const name = await input({
-	message: "What's your name?",
-	default: "User",
-	validate: (input: string) => {
-		if (input.trim() === "") {
-			return "Name cannot be empty. Please enter your name.";
-		}
-		return true;
-	}
-});
+const name = await input(inputQuestions[0]);
 
 console.log(`Hello, ${beautifyName(name)}!`);
 
