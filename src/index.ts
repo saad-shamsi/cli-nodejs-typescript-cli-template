@@ -11,13 +11,10 @@ const name = await input({
 			return "Name cannot be empty. Please enter your name.";
 		}
 		return true;
-	},
-	transformer: (input: string) => {
-		return beautifyName(input);
-	},
+	}
 });
 
-console.log(`Hello, ${name}!`);
+console.log(`Hello, ${beautifyName(name)}!`);
 
 process.exit();
 
