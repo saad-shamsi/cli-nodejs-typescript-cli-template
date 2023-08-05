@@ -37,6 +37,12 @@ To use this template, follow these steps:
 pnpm install
 ```
 
+1. Clear repository metadata using the following command:
+
+```bash
+pnpm clear-metadata
+```
+
 ## Publishing to NPM Registry
 The `.github\workflows\publish.yml` file makes use of two repository secrets to publish this package in the NPM registry: 
 1) `secrets.GHP_TOKEN` 
@@ -105,6 +111,7 @@ The `.github\workflows\publish.yml` file makes use of two repository secrets to 
 - `pnpm build`: Compiles the TypeScript code to CommonJS (CJS) and ECMAScript modules (ESM) formats, and generates declaration files (d.ts).
 - `pnpm lint`: Checks for TypeScript type errors and enforces strict type checking.
 - `pnpm release`: Builts the project and then publishes changeset updates.
+- `pnpm clear-metadata`: Use this command to clear repostory metadata and add your own values.
 
 ## Contributing
 We welcome contributions! If you find any issues or have improvements to suggest, feel free to open a pull request.
