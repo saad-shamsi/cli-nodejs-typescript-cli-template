@@ -1,5 +1,11 @@
 # Node.js TypeScript CLI Template
 
+## 1.2.0
+
+### Minor Changes
+
+- [`39dee48`](https://github.com/saad-shamsi/cli-nodejs-typescript-cli-template/commit/39dee48dc00ecdc5c1278a9890a34ed2aaefb4d4) Thanks [@saadfrhan](https://github.com/saadfrhan)! - Add script and command to clear repository metadata and allow user to reset it with custom values
+
 ## 1.1.0
 
 ### Minor Changes
